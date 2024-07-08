@@ -1,0 +1,28 @@
+#logo {
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mynav {
+  margin-bottom: 10vh;
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  letter-spacing: 0.5em;
+}
+.navRowCol {
+  transition: all 0.8s;
+}
+.navRowCol:hover {
+  text-shadow: rgba(0, 0, 0, 0.6) 0 0 15px;
+
+  cursor: pointer;
+  color: #eb5e28 !important;
+  font-size: 0.9em;
+  letter-spacing: 1.1em;
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.05);
+}

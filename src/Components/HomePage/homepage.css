@@ -1,0 +1,133 @@
+#hero {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  word-spacing: 2em;
+  letter-spacing: 0.2em;
+  font-style: italic;
+}
+#subhero {
+  background: black;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1em;
+}
+.scale-in-ver-top {
+  animation: scale-in-ver-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes scale-in-ver-top {
+  0% {
+    transform: scaleY(0);
+    transform-origin: 100% 0;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 100% 0;
+    opacity: 1;
+  }
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 70px;
+  height: 70px;
+  background: #eb5e28;
+  border-radius: 50px;
+  -webkit-mask: radial-gradient(
+        circle 31px at 50% calc(100% + 13px),
+        #000 95%,
+        #0000
+      )
+      top 4px left 50%,
+    radial-gradient(circle 31px, #000 95%, #0000) center,
+    radial-gradient(circle 31px at 50% -13px, #000 95%, #0000) bottom 4px left
+      50%,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-repeat: no-repeat;
+  animation: l10 1.5s infinite;
+}
+@keyframes l10 {
+  0% {
+    -webkit-mask-size: 0 18px, 0 18px, 0 18px, auto;
+  }
+  16.67% {
+    -webkit-mask-size: 100% 18px, 0 18px, 0 18px, auto;
+  }
+  33.33% {
+    -webkit-mask-size: 100% 18px, 100% 18px, 0 18px, auto;
+  }
+  50% {
+    -webkit-mask-size: 100% 18px, 100% 18px, 100% 18px, auto;
+  }
+  66.67% {
+    -webkit-mask-size: 0 18px, 100% 18px, 100% 18px, auto;
+  }
+  83.33% {
+    -webkit-mask-size: 0 18px, 0 18px, 100% 18px, auto;
+  }
+  100% {
+    -webkit-mask-size: 0 18px, 0 18px, 0 18px, auto;
+  }
+}
+
+.disappear {
+  animation: disappear 6s infinite;
+  transform: translateX(-25px);
+}
+.disappear2 {
+  animation: disappear 6s infinite 2s;
+}
+.disappear3 {
+  animation: disappear 6s infinite 4s;
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.word {
+  opacity: 0;
+}
+.appear {
+  animation: appear 6s infinite;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+#aside {
+  background: linear-gradient(to bottom, black, black, rgba(0, 0, 0, 0.85));
+  height: 70vh;
+}
+.eff-box {
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 1);
+}
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-indicators {
+  display: none !important;
+}

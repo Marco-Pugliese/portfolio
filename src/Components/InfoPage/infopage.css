@@ -1,0 +1,7 @@
+.hoversecondary {
+  transition: all 0.8s;
+}
+.hoversecondary:hover {
+  color: #3c6e71;
+  cursor: pointer;
+}
