@@ -3,6 +3,19 @@ import MySpinner from "../MySpinner";
 
 const CVPage = () => {
   const [spinner, setSpinner] = useState(false);
+  const styles = {
+    container: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      width: "100vw",
+      height: "100vh",
+      overflow: "hidden",
+    },
+    iframe: {
+      border: "none",
+    },
+  };
   const TimeOut = () => {
     spinner === false
       ? setTimeout(() => {
@@ -25,7 +38,7 @@ const CVPage = () => {
             width="100%"
             height="1190px"
             title="Resume PDF"
-            style={{ border: "none" }}
+            style={styles.iframe}
           ></iframe>
         </div>
       ) : (
@@ -36,4 +49,5 @@ const CVPage = () => {
     </>
   );
 };
+
 export default CVPage;

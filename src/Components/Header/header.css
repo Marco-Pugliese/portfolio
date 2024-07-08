@@ -17,12 +17,34 @@
   transition: all 0.8s;
 }
 .navRowCol:hover {
-  text-shadow: rgba(0, 0, 0, 0.6) 0 0 15px;
-
+  text-shadow: rgba(0, 0, 0, 0.4) 0 0 15px;
   cursor: pointer;
   color: #eb5e28 !important;
-  font-size: 0.9em;
+  font-size: 0.7em;
   letter-spacing: 1.1em;
+  font-weight: bolder;
   box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.05);
   background-color: rgba(0, 0, 0, 0.05);
+}
+.containerDownload {
+  position: absolute;
+  width: auto !important;
+  top: 16.5vh;
+  right: 14vw;
+}
+.fadeIn {
+  transition: all 0.8s;
+  opacity: 1;
+}
+.fadeOut {
+  transition: all 0.8s;
+  opacity: 0;
+}
+.noDecoration {
+  transition: color 0.8s;
+  color: #353535 !important;
+  text-decoration: none;
+}
+.noDecoration:hover {
+  color: #eb5e28 !important;
 }

@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [selected, setSelected] = useState("home");
-
+  const [cvhover, setcvHover] = useState(false);
+  const pdfPath = "/CV - Marco Pugliese.pdf";
   return (
     <>
       <Container className="d-flex mynav ">
@@ -35,7 +36,15 @@ const NavBar = () => {
               className="nav-link"
               onClick={() => setSelected("studies")}
             >
-              <span className={selected === "studies" ? "blueNav" : ""}>
+              <span
+                className={
+                  selected === "studies"
+                    ? "blueNav"
+                    : cvhover === true
+                    ? "blueNav"
+                    : null
+                }
+              >
                 Studies && Work
               </span>
             </Link>
@@ -43,12 +52,34 @@ const NavBar = () => {
           <Col className="col-3 navRowCol">
             <Link
               to="/CV"
-              className="nav-link"
+              className="nav-link m-0"
+              onMouseEnter={() => setcvHover(true)}
+              onMouseLeave={() => setcvHover(false)}
               onClick={() => setSelected("cv")}
             >
               <span className={selected === "cv" ? "blueNav" : ""}>C.V.</span>
             </Link>
           </Col>
+          <div className="px-5 containerDownload">
+            <span
+              onMouseEnter={() => setcvHover(true)}
+              onMouseLeave={() => setcvHover(false)}
+              className={
+                cvhover === true
+                  ? "fadeIn px-4 py-1 mt-3 navRowCol"
+                  : "fadeOut "
+              }
+            >
+              <a
+                href={pdfPath}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="noDecoration"
+              >
+                download
+              </a>
+            </span>
+          </div>
         </Row>
       </Container>
     </>

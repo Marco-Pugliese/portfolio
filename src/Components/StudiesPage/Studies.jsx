@@ -9,7 +9,7 @@ const Studies = () => {
           <Carousel.Item>
             <div>
               <Row>
-                <Col className="col-12 col-xl-6">IMG1</Col>
+                <Col className="col-12 col-xl-8">IMG1</Col>
                 <Col className="text-end px-5">
                   Descrizione1: Lorem ipsum dolor sit amet consectetur
                   adipisicing elit. Dicta voluptatum, blanditiis quia odit
@@ -23,7 +23,7 @@ const Studies = () => {
           <Carousel.Item>
             <div>
               <Row>
-                <Col className="col-12 col-xl-6">IMG2</Col>
+                <Col className="col-12 col-xl-8">IMG2</Col>
                 <Col className="text-end px-5">
                   Descrizione2: Lorem ipsum dolor sit amet consectetur,
                   adipisicing elit. Provident quaerat illum reprehenderit
@@ -50,7 +50,7 @@ const Studies = () => {
                   praesentium recusandae commodi eveniet natus illo laborum
                   necessitatibus eum?
                 </Col>
-                <Col className="d-none d-xl-block">IMG1</Col>
+                <Col className="d-none d-xl-block col-xl-8">IMG1</Col>
               </Row>
             </div>
           </Carousel.Item>
@@ -65,7 +65,7 @@ const Studies = () => {
                   architecto quos quo suscipit eligendi, similique voluptatum
                   laborum mollitia accusamus!
                 </Col>
-                <Col className="d-none d-xl-block">IMG2</Col>
+                <Col className="d-none d-xl-block col-xl-8">IMG2</Col>
               </Row>
             </div>
           </Carousel.Item>
