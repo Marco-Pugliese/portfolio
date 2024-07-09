@@ -11,10 +11,10 @@ const Aside = () => {
                 <span className="position-absolute start-0 ms-5 ps-5">1</span>
                 <div>what i do</div>
                 <div className="mt-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                  voluptas obcaecati, voluptatibus modi recusandae cum animi at
-                  ex porro doloremque atque quaerat repellendus rerum nulla
-                  nemo, esse eaque cumque quis.
+                  creating digital experiences. <br /> i design and develop
+                  innovative digital solutions that transform ideas into
+                  reality, using user-friendly design and cutting-edge
+                  technology.
                 </div>
               </div>
             </Carousel.Item>
@@ -23,10 +23,9 @@ const Aside = () => {
                 <span className="position-absolute start-0 ms-5 ps-5">2</span>
                 <div>why i do it</div>
                 <div className="mt-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellat repellendus totam quibusdam recusandae, ratione esse
-                  pariatur ab autem iure nisi, harum est, aliquam omnis facere
-                  exercitationem numquam odio debitis libero.
+                  passion. <br />i am driven by a passion for innovation and a
+                  desire to enhance people{"'"}s lives through digital tools
+                  that simplify and empower.
                 </div>
               </div>
             </Carousel.Item>
@@ -35,10 +34,10 @@ const Aside = () => {
                 <span className="position-absolute start-0 ms-5 ps-5">3</span>
                 <div>How i do it</div>
                 <div className="mt-4">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Illum necessitatibus voluptatem saepe enim. Delectus eos harum
-                  soluta ipsam, recusandae suscipit incidunt voluptates vero
-                  nobis beatae. Corrupti esse quos unde ullam!
+                  collaborative and results-focused approach. <br /> i work
+                  closely with clients to understand their needs, utilizing
+                  agile methodologies and advanced technologies to deliver
+                  high-quality projects on time.
                 </div>
               </div>
             </Carousel.Item>
@@ -50,30 +49,28 @@ const Aside = () => {
             <span className="position-absolute start-0 ms-5 ps-5">1</span>
             <div>what i do</div>
             <div className="mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              voluptas obcaecati, voluptatibus modi recusandae cum animi at ex
-              porro doloremque atque quaerat repellendus rerum nulla nemo, esse
-              eaque cumque quis.
+              creating digital experiences. <br /> i design and develop
+              innovative digital solutions that transform ideas into reality,
+              using user-friendly design and cutting-edge technology.
             </div>
           </Col>
           <Col className="position-relative eff-box p-5 m-2 rounded-3">
             <span className="position-absolute start-0 ms-5 ps-5">2</span>
             <div>why i do it</div>
             <div className="mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              repellendus totam quibusdam recusandae, ratione esse pariatur ab
-              autem iure nisi, harum est, aliquam omnis facere exercitationem
-              numquam odio debitis libero.
+              passion. <br />i am driven by a passion for innovation and a
+              desire to enhance people{"'"}s lives through digital tools that
+              simplify and empower.
             </div>
           </Col>
           <Col className="position-relative eff-box p-5 m-2 rounded-3">
             <span className="position-absolute start-0 ms-5 ps-5">3</span>
             <div>How i do it</div>
             <div className="mt-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-              necessitatibus voluptatem saepe enim. Delectus eos harum soluta
-              ipsam, recusandae suscipit incidunt voluptates vero nobis beatae.
-              Corrupti esse quos unde ullam!
+              collaborative and results-focused approach. <br /> i work closely
+              with clients to understand their needs, utilizing agile
+              methodologies and advanced technologies to deliver high-quality
+              projects on time.
             </div>
           </Col>
         </Row>

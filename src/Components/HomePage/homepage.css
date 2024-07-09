@@ -112,7 +112,17 @@
   32% {
     opacity: 0;
   }
-  33% {
+  35% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0.5;
+  }
+
+  70% {
     opacity: 1;
   }
   90% {

@@ -15,6 +15,10 @@
 }
 .navRowCol {
   transition: all 0.8s;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .navRowCol:hover {
   text-shadow: rgba(0, 0, 0, 0.4) 0 0 15px;
@@ -26,12 +30,20 @@
   box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.05);
   background-color: rgba(0, 0, 0, 0.05);
 }
-.containerDownload {
-  position: absolute;
-  width: auto !important;
-  top: 16.5vh;
-  right: 14vw;
+
+.nav2 > div {
+  margin-left: auto;
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.05);
+  text-shadow: rgba(0, 0, 0, 0.4) 0 0 15px;
 }
+/* .nav2 a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.05);
+  text-shadow: rgba(0, 0, 0, 0.4) 0 0 15px;
+} */
+
 .fadeIn {
   transition: all 0.8s;
   opacity: 1;
@@ -41,10 +53,13 @@
   opacity: 0;
 }
 .noDecoration {
-  transition: color 0.8s;
+  transition: all 0.8s;
+
   color: #353535 !important;
   text-decoration: none;
 }
 .noDecoration:hover {
   color: #eb5e28 !important;
+  font-size: 0.8em;
+  letter-spacing: 1em;
 }

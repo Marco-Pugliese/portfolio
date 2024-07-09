@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+// import DownloadBtn from "./DownloadBtn";
 
 const NavBar = () => {
   const [selected, setSelected] = useState("home");
   const [cvhover, setcvHover] = useState(false);
   const pdfPath = "/CV - Marco Pugliese.pdf";
+
   return (
     <>
       <Container className="d-flex mynav ">
@@ -49,37 +51,38 @@ const NavBar = () => {
               </span>
             </Link>
           </Col>
-          <Col className="col-3 navRowCol">
+          <Col
+            className="col-3 navRowCol"
+            onMouseEnter={() => setcvHover(true)}
+            onMouseLeave={() => setcvHover(false)}
+          >
             <Link
               to="/CV"
               className="nav-link m-0"
-              onMouseEnter={() => setcvHover(true)}
-              onMouseLeave={() => setcvHover(false)}
               onClick={() => setSelected("cv")}
             >
               <span className={selected === "cv" ? "blueNav" : ""}>C.V.</span>
             </Link>
           </Col>
-          <div className="px-5 containerDownload">
-            <span
-              onMouseEnter={() => setcvHover(true)}
-              onMouseLeave={() => setcvHover(false)}
-              className={
-                cvhover === true
-                  ? "fadeIn px-4 py-1 mt-3 navRowCol"
-                  : "fadeOut "
-              }
+          <Container fluid className="containerDownload px-0">
+            {/* <DownloadBtn /> */}
+            <div
+              className={cvhover === true ? "fadeIn py-2 nav2" : "fadeOut nav2"}
             >
-              <a
-                href={pdfPath}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="noDecoration"
-              >
-                download
-              </a>
-            </span>
-          </div>
+              <div>
+                <a
+                  onMouseEnter={() => setcvHover(true)}
+                  onMouseLeave={() => setcvHover(false)}
+                  href={pdfPath}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="noDecoration"
+                >
+                  download
+                </a>
+              </div>
+            </div>
+          </Container>
         </Row>
       </Container>
     </>
